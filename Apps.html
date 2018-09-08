@@ -1,0 +1,210 @@
+<html>
+    <head>
+        <link rel="shortcut icon" type="image/png" href="favicon.png">
+        <title>Japan-Apps</title>
+        <style>
+            body{
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-image: url(back.png);
+                
+            }
+            input.MyButton {
+                width: 100%;
+                padding: 20px;
+                cursor: pointer;
+                font-weight: bold;
+                font-size: 150%;
+                background: #b71d1d;
+                color: #fff;
+                border: 1px solid #2c0404;
+                border-radius: 15px;
+                -moz-box-shadow:: 6px 6px 5px #999;
+                -webkit-box-shadow:: 6px 6px 5px #999;
+                box-shadow:: 6px 6px 5px #999;
+                    }
+            input.MyButton:hover {
+                color: #b71d1d;
+                background: #f5f2f2;
+                border: 1px solid #fff;
+                }
+            .copyright{ 
+                text-align: center;
+                padding: 20px ;
+                background: #601111; 
+                font-family: serif;
+                color: aliceblue;
+                border-radius: 10px;
+                }
+            
+            input.gapp{
+                background-size: cover;
+                background-image: url(gapp.png);
+                width: 230px;
+                height: 230px;
+                border-radius: 20px;
+                cursor: pointer;
+                }
+            .apps{
+                visibility: hidden;
+                background-color: #3c36c4;
+                color: white;
+                border-radius: 20px;
+                padding-left: 30px;
+                padding-right: 30px;
+                }  
+            input.train{
+                background-size: cover;
+                background-image: url(train.png);
+                width: 230px;
+                height: 230px;
+                border-radius: 20px;
+                cursor: pointer;
+                }
+            .trains{
+                visibility: hidden;
+                background-color: #1a6732;
+                color: white;
+                border-radius: 20px;
+                padding-left: 30px;
+                padding-right: 30px;
+                }
+            input.travel{
+                background-size: cover;
+                background-image: url(travel.png);
+                width: 230px;
+                height: 230px;
+                border-radius: 20px;
+                cursor: pointer;
+                }
+            .travels{
+                visibility: hidden;
+                background-color: #901b1b;
+                color: aliceblue;
+                border-radius: 20px;
+                padding-left: 30px;
+                padding-right: 30px;
+                }
+            input.diff{
+                background-size: contain;
+                background-repeat: no-repeat;
+                background-image: url(diff.png);
+                width: 230px;
+                height: 230px;
+                border-radius: 20px;
+                cursor: pointer;
+                }
+            .diffs{
+                visibility: hidden;
+                background-color: #8e8e82;
+                color: white;
+                border-radius: 20px;
+                padding-left: 30px;
+                padding-right: 30px;
+                }
+            </style>
+    </head>
+    <body>
+      <div id="first" onmouseover="over1()" onmouseout="out1()" align="center"><img src="japanpan.jpg" id="photo" height="300px" width="100%"></div>
+              
+    <script>
+    function over1() {
+        var img = document.getElementById("photo");
+        img.style.visibility = 'visible';
+       document.getElementById("photo").src = "jjapan.png"
+    }
+        function out1() {
+         var img = document.getElementById("photo");
+    img.style.visibility = 'visible';
+        document.getElementById("photo").src= "japanpan.jpg"
+    
+    }
+        </script>
+        
+        <center><table border="5px" width="100%">
+            <tr>
+                <th width="20%"><a href="Home.html" target="_self"><input class="MyButton" type="button" value=" Home " onclick="Home.html" /></a></th>
+                <th width="20%"><a href="ThingsToDo.html" target="_self"><input class="MyButton" type="button" value="Things To Do" onclick="ThingsToDo.html" /></a></th>
+                <th width="20%"><a href="Apps.html"><input class="MyButton" type="button" value="  Apps  " onclick="Apps.html" /></a></th>
+                <th width="20%"><a href="FAQs.html" target="_self"><input class="MyButton" type="button" value=" FAQs " onclick="FAQs.html" /></a></th>
+                <th width="20%"><a href="AboutUs.html" target="_self"><input class="MyButton" type="button" value="About Us" onclick="AboutUs.html" /></a></th>
+            </tr>
+        </table></center>
+        <hr>
+        <div id="gapp" onclick="click1()">
+            <script>
+                function click1() {
+                var img = document.getElementById("par1");
+                img.style.visibility = 'visible';
+                document.getElementById("par1").innerHTML="Japan is a country that mainly uses the Japanese language, it is very seldom to see English in this country, so we recommend you to download the <u><em>Google Translate App</em></u> since this will be the most helpful app for you to understand what is written everywhere and it will also help you navigate and find things faster and easier."
+                        }
+            </script>
+            <center><table width="80%">
+                <tr>
+                    <th><input class="gapp" type="button" img src="gapp.png" width="50%"/></th> 
+                    <th class="apps" id="par1" width="50%"></th>
+                </tr>
+            </table>
+            </center>
+        </div>
+        
+        <hr>
+        <div id="train" onclick="click2()">
+            <script>
+                function click2() {
+                var img = document.getElementById("par2");
+                img.style.visibility = 'visible';
+                document.getElementById("par2").innerHTML="The train is Japan’s most used way of transportation and it is cheaper than taking taxis this is why we recommend you to get the <u><em>JR-East Train Info App</u></em>. This app contains information on what train should you take to reach where you want to go as well as train schedules and station maps so you won’t get lost."
+                        }
+            </script>
+            <center><table width="80%">
+                <tr>
+                    <th class="trains" id="par2" width="50%"></th>
+                    <th><input class="train" type="button" img src="train.png" width="50%"/></th> 
+                </tr>
+            </table>
+            </center>    
+        </div>
+        
+        <hr>
+        <div id="travel" onclick="click3()">
+            <script>
+                function click3() {
+                var img = document.getElementById("par3");
+                img.style.visibility = 'visible';
+                document.getElementById("par3").innerHTML="The <u><em>Japan official travel app</u></em> is going to be very helpful for your travel in this beautiful country. The app contains up-to-date travel articles for you to get ideas as to where you will go next, this app also provide you point-to-point directions to where you want to go so that you wont get lost in this foreign country, and lastly the app gives useful tips and information for your trip in Japan."
+                        }
+            </script>
+            <center><table width="80%">
+                <tr>
+                    <th><input class="travel" type="button" img src="travel.png" width="50%"/></th> 
+                    <th class="travels" id="par3" width="50%"></th>
+                </tr>
+            </table>
+            </center>    
+        </div>
+        
+        <hr>
+        <div id="diff" onclick="click4()">
+            <script>
+                function click4() {
+                var img = document.getElementById("par4");
+                img.style.visibility = 'visible';
+                document.getElementById("par4").innerHTML="Going to a foreign country means that you won’t have cell service unless you are subscribed to roaming plan which can be very expensive, so don’t forget to have online messaging apps handy. Japan is a country that have a lot of free Wi-Fi spots scattered around and you can even rent your own pocket Wi-Fi in the airport so you should not forget this messaging apps to always be connected with your family or friend travelling with you, it can also save you a lot of money from roaming charges."
+                        }
+            </script>
+            <center><table width="80%">
+                <tr>
+                    <th class="diffs" id="par4" width="50%"></th>
+                    <th><input class="diff" type="button" img src="diff.png" width="50%"/></th> 
+                </tr>
+            </table>
+            </center>
+        </div>  
+        <hr>
+          
+        
+        <p class="copyright">All rights reserved | This website was made by hardworking students
+        </p>
+    </body>
+</html>

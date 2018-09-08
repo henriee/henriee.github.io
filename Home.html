@@ -1,0 +1,169 @@
+<html>
+    <head>
+        <link rel="shortcut icon" type="image/png" href="favicon.png">
+        <title>Japan-Home</title>
+        <style>
+            body{
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-image: url(back.png);
+            }
+        input.MyButton {
+            width: 100%;
+            padding: 20px;
+            cursor: pointer;
+            font-weight: bold;
+            font-size: 150%;
+            background: #b71d1d;
+            color: #fff;
+            border: 1px solid #2c0404;
+            border-radius: 15px;
+            -moz-box-shadow:: 6px 6px 5px #999;
+            -webkit-box-shadow:: 6px 6px 5px #999;
+            box-shadow:: 6px 6px 5px #999;
+                    }
+        input.MyButton:hover {
+            color: #b71d1d;
+            background: #f5f2f2;
+            border: 1px solid #fff;
+                }
+        input.sound {
+            cursor: pointer;
+                }
+        .copyright{ 
+            text-align: center;
+            padding: 20px ;
+            background: #601111; 
+            font-family: serif;
+            color: aliceblue;
+            border-radius: 10px;
+            }
+
+        div.sounds{
+             text-align: center;
+            } 
+        .box{
+            background-image: url(paper.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+	        border-style: groove;
+	        padding:15px;
+            }  
+        h1{
+            font-family: Bradley Hand ITC;
+            text-align: center;      
+            }
+        .main{
+            padding: 20px;
+            
+            }    
+        .intro{
+             margin-left: 50px;
+             margin-right: 50px;
+             font-family: Papyrus;
+             text-align: center;
+             font-size: 20;
+            } 
+        .history{
+            background-color: #801511;
+            padding: 10px;
+            border-radius: 5px;
+            color: #fff;
+            }   
+        .geo{
+            background-color: #c33630;
+            padding: 10px;
+            border-radius: 5px; 
+            color: #fff;
+            }   
+        .culture{
+            background-color: #ff9f9b;
+            padding: 10px;
+            border-radius: 5px;
+            color: #000000;
+            }   
+        .archi{
+            background-color: #ffe5e4;
+            padding: 10px;
+            border-radius: 5px;
+            color: #000000;
+            } 
+            
+              
+        </style>
+        
+    </head>
+    <body>
+                <div id="first" onmouseover="over1()" onmouseout="out1()" align="center"><img src="japanpan.jpg" id="photo" height="300px" width="100%"></div>
+        
+    <script>
+    function over1() {
+        var img = document.getElementById("photo");
+        img.style.visibility = 'visible';
+       document.getElementById("photo").src = "jjapan.png"
+    }
+        function out1() {
+         var img = document.getElementById("photo");
+    img.style.visibility = 'visible';
+        document.getElementById("photo").src= "japanpan.jpg"
+    
+    }
+        
+        </script>
+        
+        <center><table border="5px" width="100%">
+            <tr>
+                <th width="20%"><a href="Home.html"><input class="MyButton" type="button" value=" Home " onclick="Home.html" /></a></th>
+                <th width="20%"><a href="ThingsToDo.html" target="_self"><input class="MyButton" type="button" value="Things To Do" onclick="ThingsToDo.html" /></a></th>
+                <th width="20%"><a href="Apps.html" target="_self"><input class="MyButton" type="button" value="  Apps  " onclick="Apps.html" /></a></th>
+                <th width="20%"><a href="FAQs.html" target="_"><input class="MyButton" type="button" value=" FAQs " onclick="FAQs.html" /></a></th>
+                <th width="20%"><a href="AboutUs.html" target="_self"><input class="MyButton" type="button" value="About Us" onclick="AboutUs.html" /></a></th>
+            </tr>
+        </table></center>
+       
+        <div class="sounds">
+            <h4>THE SOUND OF JAPAN</h4>
+            <audio src="song.mp3" controls loop></audio>
+        </div>
+        <hr>
+        <table width="100%">
+            <tr>
+             <th width="25%"><img src="japan.png" alt="Japan" width="250" height="360" ></th>
+             <th class="box" width="50%">
+                 <h2>こんにちは</h2>
+                 <h1>WELCOME TO JAPAN!</h1>
+                 <p class="intro">This website will take you on a virtual tour to the country of Japan. Here you will find out then country's history, culture, and more about the sovereign country in East Asia known as <em>"The Land of the Rising Sun"</em>.</p></th>
+             <th width="25%"><img src="japic.jpg" width="250" height="360"></th>
+            </tr>    
+        </table>
+        <hr>
+        <table width="100%" class="main">
+            <tr>
+                <th class="history" width="25%">History</th>
+                <th class="geo" width="25%">Geograpy</th>
+                <th class="culture" width="25%">Culture</th>
+                <th class="archi" width="25%">Architecture</th>
+            </tr>
+            <tr height="100px" style="text-align:justify">
+                <td class="history">
+                <p>The first human habitation in the Japanese archipelago has been traced to prehistoric times. The Jōmon period, named after its "cord-marked" pottery, was followed by the Yayoi in the first millennium BC, when new technologies were introduced from continental Asia. Japan first appears in written history in the Chinese Book of Han. According to the Records of the Three Kingdoms, the most powerful kingdom on the archipelago during the third century was called Yamataikoku. Buddhism was introduced to Japan from Baekje, Korea and was promoted by Prince Shōtoku, but the subsequent development of Japanese Buddhism was primarily influenced by China.  
+                </p></td>
+                
+                <td class="geo">
+                <p>Japan has a total of 6,852 islands extending along the Pacific coast of East Asia. The main islands, from north to south, are Hokkaido, Honshu, Shikoku and Kyushu. The Ryukyu Islands, which include Okinawa, are a chain to the south of Kyushu. The Nanpō Islands are south of the main islands of Japan. Together they are often known as the Japanese archipelago. The climate of Japan is predominantly temperate, but varies greatly from north to south. Japan's geographical features divide it into six principal climatic zones: Hokkaido, Sea of Japan, Central Highland, Seto Inland Sea, Pacific Ocean, and Ryukyu Islands. The northernmost zone, Hokkaido, has a humid continental climate with long, cold winters and very warm to cool summers. Precipitation is not heavy, but the islands usually develop deep snowbanks in the winter.
+                </p></td>
+                
+                <td class="culture">
+                <p>Japanese culture has evolved greatly from its origins. Contemporary culture combines influences from Asia, Europe and North America. Traditional Japanese arts include crafts such as ceramics, textiles, lacquerware, swords and dolls; performances of bunraku, kabuki, noh, dance, and rakugo; and other practices, the tea ceremony, ikebana, martial arts, calligraphy, origami, onsen, Geisha and games. Japan has a developed system for the protection and promotion of both tangible and intangible Cultural Properties and National Treasures. Besides Japanese, the Ryukyuan languages (Amami, Kunigami, Okinawan, Miyako, Yaeyama, Yonaguni), also part of the Japonic language family, are spoken in the Ryukyu Islands chain. Few children learn these languages, but in recent years the local governments have sought to increase awareness of the traditional languages.
+                </p></td>
+                
+                <td class="archi">
+                <p>Japanese architecture is a combination between local and other influences. It has traditionally been typified by wooden structures, elevated slightly off the ground, with tiled or thatched roofs. Sliding doors (fusuma) were used in place of walls, allowing the internal configuration of a space to be customized for different occasions. People usually sat on cushions or otherwise on the floor, traditionally; chairs and high tables were not widely used until the 20th century. Since the 19th century, however, Japan has incorporated much of Western, modern, and post-modern architecture into construction and design, and is today a leader in cutting-edge architectural design and technology.
+                </p></td>
+            </tr>
+        </table>  
+        <p class="copyright"><marquee>All rights reserved | This website was made by hardworking students | 
+ありがとうございました！| Bosita, Gabe | Geronimo, Bryan | Lee, JB | Piano, Gabe</marquee>
+        </p>
+    </body>
+</html>

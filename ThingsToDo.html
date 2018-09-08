@@ -1,0 +1,177 @@
+<html>
+    <head>
+        <link rel="shortcut icon" type="image/png" href="favicon.png">
+        <title>Japan-Things to do</title>
+        <style>
+            body{
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-image: url(back.png);
+            }
+        input.MyButton {
+            width: 100%;
+            padding: 20px;
+            cursor: pointer;
+            font-weight: bold;
+            font-size: 150%;
+            background: #b71d1d;
+            color: #fff;
+            border: 1px solid #2c0404;
+            border-radius: 15px;
+            -moz-box-shadow:: 6px 6px 5px #999;
+            -webkit-box-shadow:: 6px 6px 5px #999;
+            box-shadow:: 6px 6px 5px #999;
+                    }
+        input.MyButton:hover {
+            color: #b71d1d;
+            background: #f5f2f2;
+            border: 1px solid #fff;
+                }
+            
+        .copyright{ 
+            text-align: center;
+            padding: 20px ;
+            background: #601111; 
+            font-family: serif;
+            color: aliceblue;
+            border-radius: 10px;
+            }
+        .title{
+            font-family: Lucida Bright;
+            }  
+            
+        table.head, td{
+            border: 4px solid black;
+            background-image: url(paper.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+                }
+        td  {
+            font-family: "Lucida Bright";
+                }  
+        #capt{
+            text-align: justify; 
+            padding-right: 30px;
+            padding-left: 30px;
+            }    
+            </style>
+    </head>
+    <body>
+     <div id="first" onmouseover="over1()" onmouseout="out1()" align="center"><img src="japanpan.jpg" id="pic" height="300px" width="100%"></div>                
+        
+    <script>
+        function over1() {
+        var img = document.getElementById("pic");
+        img.style.visibility = 'visible';
+       document.getElementById("pic").src = "jjapan.png"
+                        }
+        function out1() {
+         var img = document.getElementById("pic");
+        img.style.visibility = 'visible';
+        document.getElementById("pic").src= "japanpan.jpg"
+    
+                    }
+        </script>
+        
+    <center><table border="5px" width="100%">
+            <tr>
+                <th width="20%"><a href="Home.html" target="_self"><input class="MyButton" type="button" value=" Home " onclick="Home.html" /></a></th>
+                <th width="20%"><a href="ThingsToDo.html"><input class="MyButton" type="button" value="Things To Do" onclick="ThingsToDo.html" /></a></th>
+                <th width="20%"><a href="Apps.html"  target="_self"><input class="MyButton" type="button" value="  Apps  " onclick="Apps.html" /></a></th>
+                <th width="20%"><a href="FAQs.html" target="_self"><input class="MyButton" type="button" value=" FAQs " onclick="FAQs.html" /></a></th>
+                <th width="20%"><a href="AboutUs.html" target="_self"><input class="MyButton" type="button" value="About Us" onclick="AboutUs.html" /></a></th>
+            </tr>
+        </table></center>
+        
+        <center><h1 class="title">--------------------------THINGS TO DO IN JAPAN--------------------------</h1></center>
+        <table class="head" id="pict1" width="75%" align="center">
+            <tr>
+                <td id="first" onmouseover="over2()" onmouseout="out2()" style="color:black" align="center" width="20%"><b>JIGOKUDANI MONKEY PARK</b></td>
+                <td id="second" onmouseover="over3()" onmouseout="out3()" style="color:black" align="center" width="20%"><b>FUSHIMI INARI TAISHA</b></td>
+                <td id="third" onmouseover="over4()" onmouseout="out4()" style="color:black" align="center" width="20%"><b>MIYAJIMA ISLAND</b></td>
+                <td id="fourth" onmouseover="over5()" onmouseout="out5()" style="color:black" align="center" width="20%"><b>SHINJUKU GYOEN Nat'l GARDEN</b></td>
+                <td id="fifth" onmouseover="over6()" onmouseout="out6()" style="color:black" align="center" width="20%"><b>MOUNT FUJI</b></td>
+            </tr>
+        </table>
+    <div id="CAPSTONE">
+        <center><table style="width:75%; height:400px">
+            <tr>
+                <td id="picture1"  width="60%" height="400px"><center><img id="photo" height="340" width="580px"></center></td>
+                 <td id="caption"  width="40" height="400px"><center><p id="capt" align="center"></p></center></td>
+            </tr>
+                </table></center>
+    </div>
+  
+    <center><h1 class="title">-------------------------------------------------------------------------------------------------------</h1></center>
+    <script>
+        
+    function over2() {
+        var img = document.getElementById("photo");
+        img.style.visibility = 'visible';
+        document.getElementById("photo").src = "monkey.jpg";
+        document.getElementById("capt").innerHTML = "The name “Jigokudani means “Hell’s valley” due to the hot springs with boiling waters surrounded by cold forests and steep mountains. It is a famous tourist spot in Japan for its huge population of snow monkeys that live in the mountains. These monkeys come down to sit in the hot springs in the morning and comes back to the mountains in the evening."
+                }
+        
+    function out2() {
+        var img = document.getElementById("photo");
+        img.style.visibility = 'hidden';
+        document.getElementById("capt").innerHTML = ""
+                }
+        
+    function over3() {
+        var img = document.getElementById("photo");
+        img.style.visibility = 'visible';
+        document.getElementById("photo").src = "fushi.jpeg";
+        document.getElementById("capt").innerHTML = "Fushimi Inari Taisha Shrine is the most visited shrine by tourists in Kyoto. It is famous for its huge number of red torii gates and fox statues. The shrine is located in Fushimi Ward in Kyoto, Japan and sits at the base of a mountain. "
+                }
+        
+    function out3() {
+        var img = document.getElementById("photo");
+        img.style.visibility = 'hidden';
+        document.getElementById("capt").innerHTML = ""
+    
+                }
+    function over4() {
+        var img = document.getElementById("photo");
+        img.style.visibility = 'visible';
+        document.getElementById("photo").src = "miyajima.jpeg";
+        document.getElementById("capt").innerHTML = "Miyajima is a small island in Hiroshima Prefecture, also known as “Shrine Island”. This is where one of the greatest Japanese shrines called “Itsukushima Shrine” and its magnificent floating red torii gate are located. People strongly believe that it’s “Home of God”.  "
+                }
+        
+    function out4() {
+        var img = document.getElementById("photo");
+        img.style.visibility = 'hidden';
+        document.getElementById("capt").innerHTML = ""
+                }
+        
+    function over5() {
+        var img = document.getElementById("photo");
+        img.style.visibility = 'visible';
+        document.getElementById("photo").src = "shinjuku.jpeg";
+        document.getElementById("capt").innerHTML = "The Japanese landscape garden is the most impressive sight. It includes some islands and bridges surrounded by large pond. Shinjuku Gyoen, also known as Tokyo's Central Park is one of the Tokyo’s largest and most popular parks. The park also has a beautiful greenhouse with tropical flowers. Over 10,000 trees provide seasonal flowers such as Somei Yoshino cherry, maple, gingko, etc."
+                }
+        
+    function out5() {
+        var img = document.getElementById("photo");
+        img.style.visibility = 'hidden';
+        document.getElementById("capt").innerHTML = ""
+                }
+        
+    function over6() {
+        var img = document.getElementById("photo");
+        img.style.visibility = 'visible';
+        document.getElementById("photo").src = "fuji.jpg";
+        document.getElementById("capt").innerHTML = "Japan’s Mt. Fuji is an active volcano found on southwest of Tokyo. It is commonly called “Fuji-san,” and it’s the country’s tallest peak. A pilgrimage site for centuries, it’s considered one of Japan’s 3 sacred mountains, and summit hikes remain a popular activity. Its iconic profile is the subject of numerous works of art, notably Edo Period prints by Hokusai and Hiroshige."
+                }
+        
+    function out6() {
+        var img = document.getElementById("photo");
+        img.style.visibility = 'hidden';
+        document.getElementById("capt").innerHTML = ""
+                }
+        
+</script>
+        <p class="copyright">All rights reserved | This website was made by hardworking students 
+        </p>
+    </body>
+</html>

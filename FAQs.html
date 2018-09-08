@@ -1,0 +1,176 @@
+<html>
+    <head>
+        <link rel="shortcut icon" type="image/png" href="favicon.png">
+        <title>Japan-FAQs</title>
+        <style>
+            body{
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-image: url(back.png);
+                }
+            input.MyButton {
+                width: 100%;
+                padding: 20px;
+                cursor: pointer;
+                font-weight: bold;
+                font-size: 150%;
+                background: #b71d1d;
+                color: #fff;
+                border: 1px solid #2c0404;
+                border-radius: 15px;
+                -moz-box-shadow:: 6px 6px 5px #999;
+                -webkit-box-shadow:: 6px 6px 5px #999;
+                box-shadow:: 6px 6px 5px #999;
+                    }
+            input.MyButton:hover {
+                color: #b71d1d;
+                background: #f5f2f2;
+                border: 1px solid #fff;
+                }
+            
+            .copyright{ 
+                text-align: center;
+                padding: 20px ;
+                background: #601111; 
+                font-family: serif;
+                color: aliceblue;
+                border-radius: 10px;
+                }
+            .ans1{
+                visibility: hidden;
+                }
+            .ans2{
+                visibility: hidden;
+                }
+            .ans3{
+                visibility: hidden;
+                }
+            .ans4{
+                visibility: hidden;
+                }
+            .ans5{
+                visibility: hidden;
+                }
+            .ans6{
+                visibility: hidden;
+                }
+            .ans7{
+                visibility: hidden;
+                }
+            
+            </style>
+    </head>
+    <body>
+    
+    <div id="first" onmouseover="over1()" onmouseout="out1()" align="center"><img src="japanpan.jpg" id="photo" height="300px" width="100%"></div>            
+    <script>
+        function over1() {
+            var img = document.getElementById("photo");
+            img.style.visibility = 'visible';
+            document.getElementById("photo").src = "jjapan.png"
+                }
+        function out1() {
+            var img = document.getElementById("photo");
+            img.style.visibility = 'visible';
+            document.getElementById("photo").src= "japanpan.jpg"
+                }
+        </script>
+        
+        <center><table border="5px" width="100%">
+            <tr>
+                <th width="20%"><a href="Home.html" target="_self"><input class="MyButton" type="button" value=" Home " onclick="Home.html" /></a></th>
+                <th width="20%"><a href="ThingsToDo.html" target="_self"><input class="MyButton" type="button" value="Things To Do" onclick="ThingsToDo.html" /></a></th>
+                <th width="20%"><a href="Apps.html"  target="_self"><input class="MyButton" type="button" value="  Apps  " onclick="Apps.html" /></a></th>
+                <th width="20%"><a href="FAQs.html"><input class="MyButton" type="button" value=" FAQs " onclick="FAQs.html" /></a></th>
+                <th width="20%"><a href="AboutUs.html" target="_self"><input class="MyButton" type="button" value="About Us" onclick="AboutUs.html" /></a></th>
+            </tr>
+        </table></center>
+        
+       <div class="q1" onclick="click1()">
+            <script>
+                function click1() {
+                var img = document.getElementById("an1");
+                img.style.visibility = 'visible';
+                document.getElementById("an1").innerHTML="No, Trains typically stop running between midnight and 1am.."
+                        }
+            </script>
+            <h1><em>Q1</em>: Are trains open 24/7?<input class="q1" type="button" value="Answer" width="100px"/></h1>
+            <h3 class="ans1" id="an1"></h3>
+        </div>
+        
+        <div class="q2" onclick="click2()">
+            <script>
+                function click2() {
+                var img = document.getElementById("an2");
+                img.style.visibility = 'visible';
+                document.getElementById("an2").innerHTML="Traditionally, Japan has been a cash-based society. You used to have to pay for everything with paper money. Today, you can get around with a credit card, but some stores and restaurants still only take cash. That number is getting smaller year by year, but it’s always good to carry paper yen notes, instead of getting to the register and realizing that you’re unable to pay your bill. Hitting an ATM might seem easy, but some banks do not take bank cards issued outside of Japan. Typically, the ATMs at post offices and 7-Elevens do. With the massive influx of tourists, more and more ATMs are able to handle foreign cards, but not all."
+                        }
+            </script>
+            <h1><em>Q2</em>: How much money should I bring?<input class="q2" type="button" value="Answer" width="100px"/></h1>
+            <h3 class="ans2" id="an2"></h3>
+        </div>
+        
+        <div class="q3" onclick="click3()">
+            <script>
+                function click3() {
+                var img = document.getElementById("an3");
+                img.style.visibility = 'visible';
+                document.getElementById("an3").innerHTML="For Osaka and Tokyo, the best times are from late March to mid-May (though, April can get crowded due to the cherry blossoms) or from early October to mid-to-late-November. Expect the big crowds during cherry blossom season."
+                        }
+            </script>
+            <h1><em>Q3</em>: When is the best time to go?<input class="q3" type="button" value="Answer" width="100px"/></h1>
+            <h3 class="ans3" id="an3"></h3>
+        </div>
+        
+        <div class="q4" onclick="click4()">
+            <script>
+                function click4() {
+                var img = document.getElementById("an4");
+                img.style.visibility = 'visible';
+                document.getElementById("an4").innerHTML="Ask for a knife and fork. People will be happy to oblige."
+                        }
+            </script>
+            <h1><em>Q4</em>: I don’t know how to use chopsticks. What should I do?<input class="q4" type="button" value="Answer" width="100px"/></h1>
+            <h3 class="ans4" id="an4"></h3>
+        </div>
+        
+        <div class="q5" onclick="click5()">
+            <script>
+                function click5() {
+                var img = document.getElementById("an5");
+                img.style.visibility = 'visible';
+                document.getElementById("an5").innerHTML="If you believe the low crime statistics, then yes, yes it is. But like anywhere, it’s good to keep your wits about you. Crimes do happen. Murders happen. Robberies happen. The country certainly seems incredibly safe, but don’t get lulled into thinking nothing bad happens in Japan. That’s simply not true."
+                }
+            </script>
+            <h1><em>Q5</em>: Is Japan really safe?<input class="q5" type="button" value="Answer" width="100px"/></h1>
+            <h3 class="ans5" id="an5"></h3>
+        </div>
+        
+        <div class="q6" onclick="click6()">
+            <script>
+                function click6() {
+                var img = document.getElementById("an6");
+                img.style.visibility = 'visible';
+                document.getElementById("an6").innerHTML="In Japanese, souvenirs are called omiyage (お土産), and since Japanese people are expected to buy souvenirs for friends and family members when they travel, the country’s souvenir industry is excellent. Many of the best souvenirs are sweets that are individually wrapped and come in beautiful boxes. Kotaku’s Luke Plunkett recommends Tokyo Banana. For Kyoto, yatsuhashi is typically the default souvenir sweet. Tea and sake, both of which I love, are also good choices in the food and drink categories. Japanese whisky is also, of course, highly recommended. If you are into anime and video games, then head to Tokyo’s Akihabara and Osaka’s Den-Den Town to shop. Because of Yahoo Japan, prices have become increasingly standardized for secondhand goods, but for gifts, you are bound to find something. Hit large electronics shops for cameras, lenses, and the like classic items like fans, textiles, tea pots and ceramics are always good. But honestly, if you see something cool that you like or that your friends and family would like, get it."
+                        }
+            </script>
+            <h1><em>Q6</em>: What makes good souvenirs?<input class="q6" type="button" value="Answer" width="100px"/></h1>
+            <h3 class="ans6" id="an6"></h3>
+        </div>
+        
+        <div class="q7" onclick="click7()">
+            <script>
+                function click7() {
+                var img = document.getElementById("an7");
+                img.style.visibility = 'visible';
+                document.getElementById("an7").innerHTML="Staying at a ryokan – a traditional Japanese-style inn – is a great way to fully immerse yourself in traditional Japanese culture. But for non-Japanese, there can be many surprises when staying at a ryokan, because it’s very different from staying at a hotel."
+                        }
+            </script>
+            <h1><em>Q7</em>: What is it like to stay at a ryokan?<input class="q7" type="button" value="Answer" width="100px"/></h1>
+            <h3 class="ans7" id="an7"></h3>
+        </div>
+       
+        <p class="copyright">All rights reserved | This website was made by hardworking students
+        </p>
+    </body>
+</html>
